@@ -32,6 +32,7 @@ Una vez ya tienes todo lo necesario en cuanto al lenguaje de programación, vamo
   * Consumer Secret (API Secret)
   * Access Token
   * Access Token Secret
+
 Tener en consideración que como explica Twitter, no deben compartirla con nadie porque le permite acceso a su cuenta de Twitter  y a las acciones que realiza tu app.
 
 2 - Una vez ya hemos obtenido nuestras APIs de Twitter, vamos a necesitar PushBullet. Lo puedes descargar desde la página de PushBullet. Mientras se descarga la aplicación en nuestros dispositivos podemos logear en la página de PushBullet con nuestra cuenta de Gmail. Vamos a crear un Token de Accesso, lo puedes hacer dirigiendote a https://www.pushbullet.com/#settings bajo la sección llamada 'Access Tokens' seleccionas 'Create Access Token' y lo copias.
@@ -41,11 +42,11 @@ Tener en consideración que como explica Twitter, no deben compartirla con nadie
   B) Hacerlo en otro archivo diferente (Yo lo he hecho así permitiendome compartirlo en GitHub sin arriesgar mis cuentas)
   
   Para hacerlo de la primera manera, sólo borran  (o la comentan) la siguiente sentencia: from keys import ckey, csecret, atoken, asecret, PBAccessToken  y crean las siguientes variables donde van a remplazar el texto entre comillas simples por su API:
-    * ckey = 'TWITTER_CONSUMER_KEY'
-    * csecret = 'TWITTER_CONSUMER_SECRET'
-    * atoken = 'TWITTER_ACCESS_TOKEN'
-    * asecret = 'TWITTER_ACCESS_TOKEN_SECRET'
-    * PBAccessToken = 'PushBullet_AccessToken'
+ * ckey = 'TWITTER_CONSUMER_KEY'
+ * csecret = 'TWITTER_CONSUMER_SECRET'
+ * atoken = 'TWITTER_ACCESS_TOKEN'
+ * asecret = 'TWITTER_ACCESS_TOKEN_SECRET'
+ * PBAccessToken = 'PushBullet_AccessToken'
   
   Si quieres tenerlo en archivos diferentes: vas a crear un nuevo archivo llamado keys.py y definir las variables mencionadas en la primera manera. Este es preferido si piensas compartirlo a un amigo pero no quieres que tenga acceso a tu API personal. Es cuestión de sólo compartir el archivo principal.
 
