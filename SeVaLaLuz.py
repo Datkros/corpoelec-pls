@@ -44,11 +44,6 @@ class listener(StreamListener):
 	def on_error(self, status):
 	    print status
 
-auth = OAuthHandler(ckey, csecret)
-auth.set_access_token(atoken, asecret)
-twitterStream = Stream(auth, listener())
-USER_ID = '1201975304'
-twitterStream.filter(follow=[USER_ID])
 
 
 def scrap_twitlonger(twitlonger):
@@ -99,3 +94,8 @@ def send_to_pushbullet(message, PBAccessToken):
 	except BaseException, e:
 		print "Given error: " + str(e)
 
+auth = OAuthHandler(ckey, csecret)
+auth.set_access_token(atoken, asecret)
+twitterStream = Stream(auth, listener())
+USER_ID = '1201975304'
+twitterStream.filter(follow=[USER_ID])
