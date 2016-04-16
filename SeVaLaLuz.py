@@ -37,8 +37,8 @@ class listener(StreamListener):
 		    if tweet.find('será necesario restringir') > 0:
 			    twitlonger = tweet.split('tl.gd/')[1]
 			    message = scrap_twitlonger(twitlonger)
-				send_to_pushbullet(message)
-			return True
+			    send_to_pushbullet(message)
+		    return True
 		except BaseException, e:
 			print "Given error was spotted " + str(e)
 
