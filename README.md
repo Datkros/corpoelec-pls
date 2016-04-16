@@ -8,7 +8,7 @@ CORPOELEC Please es un pequeño script que monitorea el twitter de CORPOELEC usa
 - requests
 - Tweetpy
 - lxml
-
+- PushBullet para teléfonos inteligentes y/o PC.
 
 A mejorar: 
 
